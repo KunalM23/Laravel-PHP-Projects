@@ -1,5 +1,7 @@
 **AI Powered Lead Scoring CRMThis project is a Modular Monolith application built with Laravel 10. It focuses on lead management and intelligent scoring using the Gemini 2.0 Flash API.**  
-🔑 Demo User CredentialsThe system includes four default users to test different permission levels.  
+
+🔑 Demo User CredentialsThe system includes four default users to test different permission levels. 
+
 Super Admin: admin@gmail.com / password
 Developer: kunal@gmail.com / password
 Manager: priya@gmail.com / password
