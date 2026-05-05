@@ -15,6 +15,7 @@ Permission Control: Action buttons like Add, Edit, and Delete are automatically 
 Modern UI: Notifications are handled via SweetAlert2 for a clean and professional look.  Lead Management: Easily manage prospects, update their status, and track every interaction in one place.
 
 📂 Simple Folder Guideroutes/web.php: Contains all page and session routes.app/Http/Controllers/Api: Contains the logic for the OTP system and Lead Scoring.  resources/views: Contains all the Blade UI pages.
+
 **Git Commands**:
 # 1. Initialize the local repository
 git init
