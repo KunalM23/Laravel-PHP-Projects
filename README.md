@@ -3,8 +3,11 @@
 🔑 Demo User CredentialsThe system includes four default users to test different permission levels. 
 
 Super Admin: admin@gmail.com / password
+
 Developer: kunal@gmail.com / password
+
 Manager: priya@gmail.com / password
+
 Tester: test@gmail.com / Minu@11
 
 🚀 **Key FeaturesEmail OTP System**: When you forget your password, the system sends a 6-digit OTP to your registered email using PHPMailer and Gmail SMTP.  AI Lead Scoring: The system uses the Gemini API to automatically analyze leads.  
