@@ -1,0 +1,176 @@
+/* =============================================
+   CRM Theme Override — Light Professional Palette
+   Replaces orange with slate blue (#3d5a99)
+   ============================================= */
+
+:root {
+    --crm-primary:   #3d5a99;
+    --crm-primary-d: #2e4577;
+    --crm-sidebar:   #1e2d4d;
+    --crm-sidebar-t: #8fa3c8;
+    --crm-sidebar-a: #3d5a99;
+    --crm-header:    #ffffff;
+    --crm-bg:        #f0f2f5;
+}
+
+/* ── Page background ── */
+.page-wrapper,
+.page-container { background: var(--crm-bg); }
+
+/* ── Sidebar ── */
+.menu-sidebar {
+    background: var(--crm-sidebar) !important;
+}
+.menu-sidebar .logo {
+    background: var(--crm-sidebar);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 18px 20px;
+}
+.navbar-sidebar .navbar__list > li > a {
+    color: var(--crm-sidebar-t);
+    font-size: 14px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    margin: 2px 8px;
+    transition: all 0.2s;
+}
+.navbar-sidebar .navbar__list > li > a:hover,
+.navbar-sidebar .navbar__list > li.active > a {
+    background: var(--crm-sidebar-a);
+    color: #fff;
+}
+.navbar-sidebar .navbar__list > li > a i {
+    width: 18px;
+    text-align: center;
+    color: var(--crm-sidebar-t);
+}
+.navbar-sidebar .navbar__list > li.active > a i,
+.navbar-sidebar .navbar__list > li > a:hover i {
+    color: #fff;
+}
+/* Submenu */
+.navbar__sub-list {
+    background: rgba(0,0,0,0.15);
+    padding: 4px 0;
+}
+.navbar__sub-list li a {
+    color: #a8bcd8 !important;
+    font-size: 13px;
+    padding: 7px 20px 7px 48px !important;
+    display: block;
+}
+.navbar__sub-list li a:hover,
+.navbar__sub-list li.active a {
+    color: #fff !important;
+    background: rgba(255,255,255,0.08);
+}
+/* Arrow icon */
+.js-arrow::after {
+    border-color: var(--crm-sidebar-t) transparent transparent transparent;
+}
+
+/* ── Header / Navbar ── */
+.header-desktop {
+    background: var(--crm-header) !important;
+    border-bottom: 1px solid #dde3ec;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06) !important;
+}
+.header-desktop .au-input {
+    background: #f0f2f5;
+    border: 1px solid #dde3ec;
+    border-radius: 20px;
+    color: #555;
+}
+.header-desktop .js-acc-btn {
+    color: #333 !important;
+    font-weight: 600;
+}
+.account-item .image img {
+    border: 2px solid #dde3ec;
+}
+
+/* ── Buttons ── */
+.au-btn--green,
+.au-btn--green:hover { background: #2e7d32; }
+
+.au-btn--blue,
+.au-btn--blue:hover  { background: var(--crm-primary); }
+
+.btn-primary         { background-color: var(--crm-primary); border-color: var(--crm-primary); }
+.btn-primary:hover   { background-color: var(--crm-primary-d); border-color: var(--crm-primary-d); }
+
+/* ── Cards ── */
+.card {
+    border: none;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    border-radius: 6px;
+}
+.card-header {
+    background: #f8f9fb;
+    border-bottom: 1px solid #eaecf0;
+    font-size: 14px;
+    padding: 12px 16px;
+}
+
+/* ── Tables ── */
+.table-data2 thead th {
+    background: #f0f2f5;
+    color: #444;
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 2px solid #dde3ec;
+}
+.tr-shadow {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.tr-shadow:hover { background: #f7f9fc; }
+
+/* ── Overview cards ── */
+.overview-item--c1 { background: linear-gradient(135deg, #3d5a99, #5b7ec9); }
+.overview-item--c2 { background: linear-gradient(135deg, #2e7d32, #4caf50); }
+.overview-item--c3 { background: linear-gradient(135deg, #e65100, #ff8f00); }
+.overview-item--c4 { background: linear-gradient(135deg, #00838f, #26c6da); }
+
+/* ── Login page ── */
+.login-content { border-color: var(--crm-primary) !important; }
+.login-logo p  { color: var(--crm-primary) !important; }
+.au-input-border { border-color: var(--crm-primary) !important; }
+
+/* ── Alerts ── */
+.alert-success { background: #e8f5e9; border-color: #a5d6a7; color: #2e7d32; }
+.alert-danger  { background: #fdecea; border-color: #f5c6cb; color: #c62828; }
+
+/* ── Pagination ── */
+.pagination .page-item.active .page-link {
+    background-color: var(--crm-primary);
+    border-color: var(--crm-primary);
+}
+.pagination .page-link { color: var(--crm-primary); }
+
+/* ── Table action buttons ── */
+.table-data-feature .item {
+    background: #f0f2f5;
+    border-radius: 4px;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 2px;
+    transition: all 0.2s;
+}
+.table-data-feature .item:hover { background: var(--crm-primary); color: #fff; }
+.table-data-feature a.item { text-decoration: none; }
+
+/* ── Overview wrap ── */
+.overview-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 20px;
+}
